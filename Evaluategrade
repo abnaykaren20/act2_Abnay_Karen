@@ -1,1 +1,28 @@
+<?php
 
+$dionisio_grade = 94.5;
+if ($dionisio_grade >= 74.5) {
+    $dionisio_status = "Passed";
+} else {
+    $dionisio_status = "Failed";
+}
+
+if ($dionisio_grade >= 90 && $dionisio_grade <= 100) {
+    $dionisio_letterGrade = 'A';
+} elseif ($dionisio_grade >= 80 && $dionisio_grade < 90) {
+    $dionisio_letterGrade = 'B';
+} elseif ($dionisio_grade >= 70 && $dionisio_grade < 80) {
+    $dionisio_letterGrade = 'C';
+} elseif ($dionisio_grade >= 60 && $dionisio_grade < 70) {
+    $dionisio_letterGrade = 'D';
+} elseif ($dionisio_grade >= 0 && $dionisio_grade < 60) {
+    $dionisio_letterGrade = 'F';
+} else {
+    $dionisio_letterGrade = 'Invalid Grade';
+}
+
+echo "Numerical Grade: " . $dionisio_grade . "<br>";
+echo "Remarks: " . $dionisio_status . "<br>";
+echo "Letter Grade: " . $dionisio_letterGrade;
+
+?>
